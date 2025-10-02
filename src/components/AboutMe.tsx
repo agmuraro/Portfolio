@@ -2,7 +2,7 @@ import AnimatedContent from './reactBits/AnimatedContent';
 
 export default function AboutMe() {
   return (
-    <div className='flex justify-start'>
+    <div className='flex justify-start mb-20'>
       <AnimatedContent
         distance={100}
         direction='vertical'

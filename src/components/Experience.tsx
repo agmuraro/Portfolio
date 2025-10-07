@@ -1,4 +1,5 @@
 import AnimatedContent from './reactBits/AnimatedContent';
+import { MdOutlineArrowOutward } from 'react-icons/md';
 
 export default function Experience({ cardClass = '' }: { cardClass?: string }) {
   return (
@@ -34,6 +35,7 @@ export default function Experience({ cardClass = '' }: { cardClass?: string }) {
               target='_blank'
             >
               Truechange
+              <MdOutlineArrowOutward className='inline align-middle ml-1' />
             </a>
             <p className='text-sm text-gray-400 mb-1'>
               Frontend Intern | Mendix
@@ -76,6 +78,7 @@ export default function Experience({ cardClass = '' }: { cardClass?: string }) {
               target='_blank'
             >
               IbacBrasil
+              <MdOutlineArrowOutward className='inline align-middle ml-1' />
             </a>
             <p className='text-sm text-gray-400 mb-1'>
               Full Stack Intern | Web Development

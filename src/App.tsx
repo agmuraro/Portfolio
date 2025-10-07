@@ -3,6 +3,7 @@ import AboutMe from './components/AboutMe';
 import Footer from './components/Footer';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
+import Education from './components/Education';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <div className='flex flex-col gap-10'>
             <AboutMe cardClass='w-full' />
             <Experience cardClass='w-full' />
+            <Education cardClass='w-full' />
           </div>
           <div className='lg:row-span-2 justify-self-end'>
             <Skills cardClass='w-full' />

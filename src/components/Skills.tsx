@@ -1,9 +1,6 @@
 import AnimatedContent from './reactBits/AnimatedContent';
-import { useState } from 'react';
 
 export default function Skills({ cardClass = '' }: { cardClass?: string }) {
-  const [hoveredGroup, setHoveredGroup] = useState<number | null>(null);
-
   const skillGroups = [
     {
       title: 'Frontend',
@@ -90,21 +87,10 @@ export default function Skills({ cardClass = '' }: { cardClass?: string }) {
           </header>
 
           <div className='grid md:grid-cols-2 gap-8'>
-            {skillGroups.map((group, idx) => {
-              const isHovered = hoveredGroup === idx;
-
+            {skillGroups.map((group) => {
               return (
-                <div
-                  key={group.title}
-                  className='space-y-4'
-                  onMouseEnter={() => setHoveredGroup(idx)}
-                  onMouseLeave={() => setHoveredGroup(null)}
-                >
-                  <h3
-                    className={`text-2xl font-semibold transition-colors duration-300 ${
-                      isHovered ? 'text-accent' : 'text-gray-200'
-                    }`}
-                  >
+                <div key={group.title} className='space-y-4'>
+                  <h3 className={`text-2xl font-semibold text-accentLight `}>
                     {group.title}
                   </h3>
 
@@ -114,32 +100,16 @@ export default function Skills({ cardClass = '' }: { cardClass?: string }) {
                         key={tech}
                         className='flex flex-wrap items-center gap-2'
                       >
-                        <span
-                          className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 border ${
-                            isHovered
-                              ? 'bg-accent/20 text-accent border-accent/40'
-                              : 'bg-surface/60 text-gray-200 border-border'
-                          }`}
-                        >
+                        <span className='px-4 py-2 rounded-full text-sm font-semibold bg-surface/60 text-gray-200 border border-border'>
                           {tech}
                         </span>
                         {tools && tools.length > 0 && (
                           <>
-                            <span
-                              className={`mx-1 ${
-                                isHovered ? 'text-accent' : 'text-gray-500'
-                              }`}
-                            >
-                              →
-                            </span>
+                            <span className={`mx-1`}>→</span>
                             {tools.map((tool) => (
                               <span
                                 key={tool}
-                                className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-300 border ${
-                                  isHovered
-                                    ? 'bg-accent/10 text-accent border-accent/30'
-                                    : 'bg-surface/40 text-gray-400 border-border'
-                                }`}
+                                className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-300 border `}
                               >
                                 {tool}
                               </span>

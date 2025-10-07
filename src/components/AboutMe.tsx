@@ -1,8 +1,8 @@
 import AnimatedContent from './reactBits/AnimatedContent';
 
-export default function AboutMe() {
+export default function AboutMe({ cardClass = '' }: { cardClass?: string }) {
   return (
-    <div className='flex justify-start mb-20'>
+    <div className='flex justify-start'>
       <AnimatedContent
         distance={100}
         direction='vertical'
@@ -17,7 +17,7 @@ export default function AboutMe() {
       >
         <section
           id='about'
-          className='max-w-3xl ml-20 p-6 bg-surface rounded-xl border border-border shadow-lg'
+          className={`w-full p-6 bg-surface rounded-xl border border-border shadow-lg ${cardClass}`}
         >
           <h2 className='text-3xl font-bold mb-6 text-accent'>About Me</h2>
 
@@ -34,7 +34,7 @@ export default function AboutMe() {
             with solid experience in{' '}
             <span className='font-semibold text-accentLight'>API</span> and{' '}
             <span className='font-semibold text-accentLight'>database</span>{' '}
-            development and maintenance. Currently, I’m expanding my expertise
+            development and maintenance. Currently, I'm expanding my expertise
             into{' '}
             <span className='font-semibold text-accentLight'>
               Full-Stack Development

@@ -9,14 +9,13 @@ function App() {
     <div className='bg-midnight min-h-screen text-gray-100'>
       <Introduction />
       <main className='px-8'>
-        <div className='grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-20 items-start justify-between'>
+        <div className='grid grid-cols-1 lg:grid-cols-[1.3fr_1.1fr] gap-20 items-start justify-between'>
           <div className='flex flex-col gap-10'>
             <AboutMe cardClass='w-full' />
-            <Skills cardClass='w-full' />
-          </div>
-
-          <div className='lg:row-span-2 justify-self-end'>
             <Experience cardClass='w-full' />
+          </div>
+          <div className='lg:row-span-2 justify-self-end'>
+            <Skills cardClass='w-full' />
           </div>
         </div>
       </main>

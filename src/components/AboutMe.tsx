@@ -4,15 +4,15 @@ export default function AboutMe({ cardClass = '' }: { cardClass?: string }) {
   return (
     <div className='flex justify-start'>
       <AnimatedContent
-        distance={100}
+        distance={50}
         direction='vertical'
         reverse={false}
-        duration={1}
+        duration={0.8}
         ease='power3.out'
         initialOpacity={0}
         animateOpacity
         scale={1}
-        threshold={0.1}
+        threshold={0}
         delay={0}
       >
         <section

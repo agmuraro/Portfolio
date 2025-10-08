@@ -17,7 +17,7 @@ function Introduction() {
           ]}
           activeHref='/'
           className='custom-nav'
-          ease='power2.easeOut'
+          ease='power3.easeOut'
           baseColor='#2f343b'
           pillColor='#00ff88'
           hoveredPillTextColor='#00ff88'
@@ -30,7 +30,7 @@ function Introduction() {
         <div className='absolute inset-0 z-10 pointer-events-none bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.6)_0%,rgba(0,0,0,0)_60%)]' />
 
         <div className='relative z-20 text-center pointer-events-none'>
-          <h1 className='text-5xl md:text-6xl font-extrabold text-accent'>
+          <h1 className='text-5xl md:text-6xl font-extrabold text-accent '>
             <TextType
               text={['Arthur Muraro']}
               textColors={['#00ff88']}

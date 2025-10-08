@@ -1,5 +1,6 @@
 import PillNav from './reactBits/PillNav';
 import logo from '/cpu.png';
+import TextType from './reactBits/TextType';
 
 function Introduction() {
   return (
@@ -30,10 +31,24 @@ function Introduction() {
 
         <div className='relative z-20 text-center pointer-events-none'>
           <h1 className='text-5xl md:text-6xl font-extrabold text-accent'>
-            Arthur Muraro
+            <TextType
+              text={['Arthur Muraro']}
+              textColors={['#00ff88']}
+              typingSpeed={75}
+              pauseDuration={1000}
+              showCursor={true}
+              cursorCharacter='|'
+            />
           </h1>
           <h2 className='mt-2 text-lg md:text-xl text-accentLight'>
-            Software Engineer
+            <TextType
+              text={['Software Engineer']}
+              textColors={['#bbf7d0']}
+              typingSpeed={75}
+              pauseDuration={1000}
+              showCursor={false}
+              cursorCharacter='|'
+            />
           </h2>
         </div>
       </header>

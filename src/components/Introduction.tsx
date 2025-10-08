@@ -1,6 +1,5 @@
 import PillNav from './reactBits/PillNav';
 import logo from '/cpu.png';
-import LetterGlitch from './reactBits/LetterGlitch';
 
 function Introduction() {
   return (
@@ -9,10 +8,10 @@ function Introduction() {
         <PillNav
           logo={logo}
           items={[
-            { label: 'About Me', href: '/about' },
-            { label: 'Skills', href: '/services' },
-            { label: 'Experience', href: '/contact' },
-            { label: 'Education', href: '/contact' },
+            { label: 'About Me', href: '/aboutme' },
+            { label: 'Skills', href: '/skills' },
+            { label: 'Experience', href: '/experience' },
+            { label: 'Education', href: '/education' },
             { label: 'Contact', href: '/contact' },
           ]}
           activeHref='/'
@@ -26,18 +25,7 @@ function Introduction() {
         />
       </div>
       <div className='flex items-center justify-center'></div>
-      <header className='relative flex items-center justify-center min-h-screen px-6 bg-midnight text-gray-100 overflow-hidden'>
-        <div className='absolute inset-0 z-0'>
-          <LetterGlitch
-            glitchSpeed={70}
-            centerVignette={false}
-            outerVignette={true}
-            smooth={true}
-            glitchColors={['#00ff88', '#2f343b', '#1e2329']}
-            characters={'ARTHURMURARO 21102004<>@$#'}
-          />
-        </div>
-
+      <header className='relative flex items-center justify-center min-h-screen px-6 text-gray-100 overflow-hidden'>
         <div className='absolute inset-0 z-10 pointer-events-none bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.6)_0%,rgba(0,0,0,0)_60%)]' />
 
         <div className='relative z-20 text-center pointer-events-none'>

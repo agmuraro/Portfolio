@@ -6,7 +6,7 @@ export default function Skills({ cardClass = '' }: { cardClass?: string }) {
       title: 'Frontend',
       technologies: [
         { tech: 'HTML' },
-        { tech: 'CSS', tools: ['Tailwind', 'Bootstrap'] },
+        { tech: 'CSS', tools: ['Tailwind', 'Bootstrap', 'SCSS'] },
         { tech: 'JavaScript', tools: ['React', 'TypeScript'] },
       ],
     },

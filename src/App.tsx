@@ -16,7 +16,7 @@ function App() {
             <Experience cardClass='w-full' />
             <Education cardClass='w-full' />
           </div>
-          <div className='lg:row-span-2 justify-self-end'>
+          <div className='lg:row-span-2 justify-self-end gap-10'>
             <Skills cardClass='w-full' />
           </div>
         </div>

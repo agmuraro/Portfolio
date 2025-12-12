@@ -1,30 +1,9 @@
-import PillNav from './reactBits/PillNav';
-import logo from '/cpu.png';
 import TextType from './reactBits/TextType';
 
 function Introduction() {
   return (
     <>
-      <div className='flex items-center justify-center'>
-        <PillNav
-          logo={logo}
-          items={[
-            { label: 'About Me', href: '/aboutme' },
-            { label: 'Skills', href: '/skills' },
-            { label: 'Experience', href: '/experience' },
-            { label: 'Education', href: '/education' },
-            { label: 'Contact', href: '/contact' },
-          ]}
-          activeHref='/'
-          className='custom-nav'
-          ease='power3.easeOut'
-          baseColor='#2f343b'
-          pillColor='#00ff88'
-          hoveredPillTextColor='#00ff88'
-          pillTextColor='#2f343b'
-          initialLoadAnimation={true}
-        />
-      </div>
+      <div className='flex items-center justify-center'></div>
       <div className='flex items-center justify-center'></div>
       <header className='relative flex items-center justify-center min-h-screen px-6 text-gray-100 overflow-hidden'>
         <div className='absolute inset-0 z-10 pointer-events-none bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.6)_0%,rgba(0,0,0,0)_60%)]' />

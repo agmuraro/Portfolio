@@ -22,7 +22,7 @@ export default function AboutMe({ cardClass = '' }: { cardClass?: string }) {
           <h2 className='text-3xl font-bold mb-6 text-accent'>About Me</h2>
 
           <p className='text-gray-300 leading-relaxed mb-4'>
-            My name is Arthur Muraro, I'm currently 20 years old, and I live in
+            My name is Arthur Muraro, I'm currently 21 years old, and I live in
             Curitiba, Paraná, Brazil.
           </p>
 

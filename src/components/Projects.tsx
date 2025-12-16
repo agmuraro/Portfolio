@@ -23,19 +23,7 @@ export default function Projects({ cardClass = '' }: { cardClass?: string }) {
           <h2 className='text-3xl font-bold mb-6 text-accent'>Projects</h2>
 
           <p className='text-gray-300 leading-relaxed mb-8'>
-            Below are some of the projects I have developed, focusing on
-            <span className='font-semibold text-accentLight'>
-              {' '}
-              backend architecture
-            </span>
-            ,<span className='font-semibold text-accentLight'> security</span>,
-            and
-            <span className='font-semibold text-accentLight'>
-              {' '}
-              scalable systems
-            </span>
-            . Each project was designed to solve real-world problems using
-            modern development practices.
+            Below are some of the projects I have developed.
           </p>
 
           <div className='mb-8'>
@@ -71,26 +59,39 @@ export default function Projects({ cardClass = '' }: { cardClass?: string }) {
             </a>
           </div>
 
-          {/* <div className='mb-2'>
+          <div className='mb-8'>
             <h3 className='text-xl font-semibold text-accentLight mb-2'>
-              Portfolio Website
+              Simple Calculator
             </h3>
-            <p className='text-gray-300 leading-relaxed'>
-              A personal portfolio website developed with
-              <span className='font-semibold text-accentLight'> React</span>,
+
+            <p className='text-gray-300 leading-relaxed mb-3'>
+              A simple calculator that features
+              <span className='font-semibold text-accentLight'> addition</span>,
               <span className='font-semibold text-accentLight'>
                 {' '}
-                TypeScript
+                subtraction
+              </span>
+              ,
+              <span className='font-semibold text-accentLight'>
+                {' '}
+                multiplication
               </span>
               , and
-              <span className='font-semibold text-accentLight'>
-                {' '}
-                Tailwind CSS
-              </span>
-              , featuring animated UI components, responsive design, and a focus
-              on performance and clean component structure.
+              <span className='font-semibold text-accentLight'> division</span>,
+              built with
+              <span className='font-semibold text-accentLight'> React</span>.
             </p>
-          </div> */}
+
+            <a
+              href='https://github.com/agmuraro/Calculator'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-flex items-center gap-2 text-accent hover:text-accentLight transition-colors font-medium'
+            >
+              View repository on GitHub
+              <MdOutlineArrowOutward className='inline align-middle' />
+            </a>
+          </div>
         </section>
       </AnimatedContent>
     </div>

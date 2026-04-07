@@ -92,6 +92,59 @@ export default function Projects({ cardClass = '' }: { cardClass?: string }) {
               <MdOutlineArrowOutward className='inline align-middle' />
             </a>
           </div>
+
+          <div className='mb-8'>
+            <h3 className='text-xl font-semibold text-accentLight mb-2'>
+              Notes App
+            </h3>
+
+            <p className='text-gray-300 leading-relaxed mb-3'>
+              A simple and responsive
+              <span className='font-semibold text-accentLight'>
+                {' '}
+                notes application
+              </span>{' '}
+              built with
+              <span className='font-semibold text-accentLight'> React</span>,
+              <span className='font-semibold text-accentLight'>
+                {' '}
+                TypeScript
+              </span>
+              , and
+              <span className='font-semibold text-accentLight'>
+                {' '}
+                Vite
+              </span>. This app allows users to
+              <span className='font-semibold text-accentLight'> create</span>,
+              <span className='font-semibold text-accentLight'> manage</span>,
+              and
+              <span className='font-semibold text-accentLight'>
+                {' '}
+                track their notes
+              </span>{' '}
+              with a
+              <span className='font-semibold text-accentLight'>
+                {' '}
+                clean interface
+              </span>{' '}
+              and
+              <span className='font-semibold text-accentLight'>
+                {' '}
+                dark mode support
+              </span>
+              .
+            </p>
+
+            <a
+              href='https://notes-arthurmuraro.vercel.app/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-flex items-center gap-2 text-accent hover:text-accentLight transition-colors font-medium'
+            >
+              View live demo
+              <MdOutlineArrowOutward className='inline align-middle' />
+            </a>
+          </div>
         </section>
       </AnimatedContent>
     </div>

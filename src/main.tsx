@@ -1,13 +1,13 @@
 import { createRoot } from 'react-dom/client';
-import './index.css';
-import App from './App.tsx';
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import './styles/index.css';
+import App from './app/App.tsx';
+import { LanguageProvider } from './i18n/LanguageContext.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <LanguageProvider>
       <App />
-    </BrowserRouter>
+    </LanguageProvider>
   </React.StrictMode>
 );

@@ -1,0 +1,20 @@
+.typing-text {
+  display: inline-block;
+  white-space: pre-wrap;
+}
+
+.typing-text__cursor {
+  margin-left: 0.25rem;
+  display: inline-block;
+  animation: typing-text-blink 1s step-end infinite;
+}
+
+@keyframes typing-text-blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
